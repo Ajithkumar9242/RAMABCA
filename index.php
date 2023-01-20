@@ -136,8 +136,8 @@ if(isset($_POST['submit'])){
 				<td class='text-left'>$u_f_name   $u_l_name</td>
 				<td class='text-left'>$u_card</td>
 				<td class='text-left'>$u_phone</td>
-				<td class='text-left'>$u_phone</td>
 				<td class='text-left'>$email</td>
+			
 
 
 
