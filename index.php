@@ -67,6 +67,7 @@ if(isset($_POST['submit'])){
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
@@ -85,6 +86,10 @@ if(isset($_POST['submit'])){
 	}
 
 ?>
+
+<nav class="navbar navbar-expand-lg navbar navbar-inverse">
+  <a class="navbar-brand" href="#" style="font-size:30px;"><strong>STUDENT REGISTRATION FORM</strong></a>
+</nav>
 
 
 

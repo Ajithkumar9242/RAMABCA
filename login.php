@@ -106,9 +106,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#" style="font-size:30px;"><strong>RAMA</strong></a>
-
-
-
 </nav>
 
     <div class="container my-4">
