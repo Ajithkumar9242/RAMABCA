@@ -66,13 +66,20 @@ if(isset($_POST['submit'])){
 	<title>Student Crud Operation</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
 </head>
 <body>
 
@@ -87,8 +94,8 @@ if(isset($_POST['submit'])){
 
 ?>
 
-<nav class="navbar navbar-expand-lg navbar navbar-inverse">
-  <a class="navbar-brand" href="#" style="font-size:30px;"><strong>STUDENT REGISTRATION FORM</strong></a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#" style="font-size:30px;"><strong>STUDENT REGISTREATION FORM</strong></a>
 </nav>
 
 
@@ -372,8 +379,8 @@ while($row = mysqli_fetch_array($run_data))
     <!-- Modal content-->
     <div class='modal-content'>
       <div class='modal-header'>
+	  <h4 class='modal-title text-center'>Are you want to sure??</h4>
         <button type='button' class='close' data-dismiss='modal'>&times;</button>
-        <h4 class='modal-title text-center'>Are you want to sure??</h4>
       </div>
       <div class='modal-body'>
         <a href='delete.php?id=$id' class='btn btn-danger' style='margin-left:250px'>Delete</a>
@@ -522,8 +529,9 @@ while($row = mysqli_fetch_array($run_data))
     <!-- Modal content-->
     <div class='modal-content'>
       <div class='modal-header'>
+	  <h4 class='modal-title text-center'>Edit your Data</h4> 
+
              <button type='button' class='close' data-dismiss='modal'>&times;</button>
-             <h4 class='modal-title text-center'>Edit your Data</h4> 
       </div>
 
       <div class='modal-body'>
